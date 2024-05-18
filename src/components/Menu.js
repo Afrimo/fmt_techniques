@@ -6,62 +6,58 @@ export function Menu() {
     <div>
       <Header />
       <div className="row">
-        <div className="card">
-          <div className="layer"></div>
-          <img src="images/wrestling_offence.jpeg" />
-          <p className="category-title">Takedowns</p>
-          <p className="category-text">Offence</p>
-        </div>
-        <div className="card">
-          <div className="layer"></div>
-          <img src="images/wrestling_defence.png" />
-          <p className="category-title">Takedowns</p>
-          <p className="category-text">Defence</p>
-        </div>
+        <Card
+          title="Takedowns"
+          text="Offence"
+          img="images/wrestling_offence.jpeg"
+        />
+        <Card
+          title="Takedowns"
+          text="Defence"
+          img="images/wrestling_defence.png"
+        />
       </div>
       <div className="row">
-        <div className="card">
-          <div className="layer"></div>
-          <img src="images/grappling_offence.jpeg" />
-          <p className="category-title">Ground game</p>
-          <p className="category-text">Offence</p>
-        </div>
-        <div className="card">
-          <div className="layer"></div>
-          <img src="images/grappling_defence.jpeg" />
-          <p className="category-title">Ground game</p>
-          <p className="category-text">Defence</p>
-        </div>
+        <Card
+          title="Ground game"
+          text="Offence"
+          img="images/grappling_offence.jpeg"
+        />
+        <Card
+          title="Ground game"
+          text="Defence"
+          img="images/grappling_defence.jpeg"
+        />
       </div>
       <div className="row">
-        <div className="card">
-          <div className="layer"></div>
-          <img src="images/striking_offence.jpeg" />
-          <p className="category-title">Striking</p>
-          <p className="category-text">Offence</p>
-        </div>
-        <div className="card">
-          <div className="layer"></div>
-          <img src="images/striking_defence.jpeg" />
-          <p className="category-title">Striking</p>
-          <p className="category-text">Defence</p>
-        </div>
+        <Card
+          title="Striking"
+          text="Offence"
+          img="images/striking_offence.jpeg"
+        />
+        <Card
+          title="Striking"
+          text="Defence"
+          img="images/striking_defence.jpeg"
+        />
       </div>
       <div className="row">
-        <div className="card">
-          <div className="layer"></div>
-          <img src="images/wall_offence.webp" />
-          <p className="category-title">Wall game</p>
-          <p className="category-text">Offence</p>
-        </div>
-        <div className="card">
-          <div className="layer"></div>
-          <img src="images/wall_defence.jpeg" />
-          <p className="category-title">Wall game</p>
-          <p className="category-text">Defence</p>
-        </div>
+        <Card title="Wall game" text="Offence" img="images/wall_offence.webp" />
+        <Card title="Wall game" text="Defence" img="images/wall_defence.jpeg" />
       </div>
+
       <button className="log-out-btn">Logg ut</button>
+    </div>
+  );
+}
+
+function Card({ title = "title", text = "text", img = "img" }) {
+  return (
+    <div className="card">
+      <div className="layer"></div>
+      <img src={img} />
+      <p className="category-title">{title}</p>
+      <p className="category-text">{text}</p>
     </div>
   );
 }
