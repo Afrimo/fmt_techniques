@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { Header } from "./Header";
 import "../styles/Menu.css";
 
@@ -46,7 +48,11 @@ export function Menu() {
         <Card title="Wall game" text="Defence" img="images/wall_defence.jpeg" />
       </div>
 
-      <button className="log-out-btn">Logg ut</button>
+      <div className="btn-container">
+        <Link to="/">
+          <button className="log-out-btn">Logg ut</button>
+        </Link>
+      </div>
     </div>
   );
 }

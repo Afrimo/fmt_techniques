@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { Header } from "./Header";
 import "../styles/Login.css";
 
@@ -15,7 +17,9 @@ function LoginInputs() {
     <div className="inputs-body">
       <input placeholder="Brukernavn" />
       <input className="password" placeholder="Passord" type="password" />
-      <button className="login-btn">Logg inn</button>
+      <Link to="/Menu">
+        <button className="login-btn">Logg inn</button>
+      </Link>
     </div>
   );
 }
