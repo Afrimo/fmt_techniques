@@ -22,13 +22,13 @@ export function Menu() {
       <div className="row">
         <div className="card">
           <div className="layer"></div>
-          <img src="images/wrestling_defence.png" />
+          <img src="images/grappling_offence.jpeg" />
           <p className="category-title">Ground game</p>
           <p className="category-text">Offence</p>
         </div>
         <div className="card">
           <div className="layer"></div>
-          <img src="images/wrestling_defence.png" />
+          <img src="images/grappling_defence.jpeg" />
           <p className="category-title">Ground game</p>
           <p className="category-text">Defence</p>
         </div>
@@ -36,13 +36,13 @@ export function Menu() {
       <div className="row">
         <div className="card">
           <div className="layer"></div>
-          <img src="images/wrestling_defence.png" />
+          <img src="images/striking_offence.jpeg" />
           <p className="category-title">Striking</p>
           <p className="category-text">Offence</p>
         </div>
         <div className="card">
           <div className="layer"></div>
-          <img src="images/wrestling_defence.png" />
+          <img src="images/striking_defence.jpeg" />
           <p className="category-title">Striking</p>
           <p className="category-text">Defence</p>
         </div>
@@ -50,13 +50,13 @@ export function Menu() {
       <div className="row">
         <div className="card">
           <div className="layer"></div>
-          <img src="images/wrestling_defence.png" />
+          <img src="images/wall_offence.webp" />
           <p className="category-title">Wall game</p>
           <p className="category-text">Offence</p>
         </div>
         <div className="card">
           <div className="layer"></div>
-          <img src="images/wrestling_defence.png" />
+          <img src="images/wall_defence.jpeg" />
           <p className="category-title">Wall game</p>
           <p className="category-text">Defence</p>
         </div>
