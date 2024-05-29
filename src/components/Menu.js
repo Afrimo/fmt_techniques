@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import { Header } from "./Header";
 import "../styles/Menu.css";
 
@@ -48,7 +47,7 @@ export function Menu() {
         <Card title="Wall game" text="Defence" img="images/wall_defence.jpeg" />
       </div>
 
-      <div className="btn-container">
+      <div className="row">
         <Link to="/">
           <button className="log-out-btn">Logg ut</button>
         </Link>
@@ -61,7 +60,7 @@ function Card({ title = "title", text = "text", img = "img" }) {
   return (
     <div className="card">
       <div className="layer"></div>
-      <img src={img} />
+      <img src={img} alt="" />
       <p className="category-title">{title}</p>
       <p className="category-text">{text}</p>
     </div>

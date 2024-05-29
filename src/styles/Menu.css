@@ -54,18 +54,19 @@
 }
 
 .btn-container {
-  height: max-content;
   width: 100%;
-
   display: flex;
   justify-content: center;
 }
-.log-out-btn {
+
+a {
   margin-top: 10%;
   margin-bottom: 10%;
-  width: 350px;
+}
 
-  height: 35px;
+.log-out-btn {
+  width: 330px;
+  height: 45px;
   font-weight: bold;
   border: none;
 }
