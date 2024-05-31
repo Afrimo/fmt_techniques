@@ -7,10 +7,13 @@ export function TakedownsOffence({ toggleTkOffence }) {
     <div className="tk-off-box">
       <div className="modal-header">
         <ArrowCircleLeftIcon onClick={toggleTkOffence} className="back" />
-
         <h3>TAKEDOWNS OFFENCE</h3>
         <SearchIcon className="search" />
         <input className="search-bar" placeholder="Søk teknikk" />
+      </div>
+      <div className="modal-body">
+        <div className="card1"></div>
+        <div className="card1"></div>
       </div>
     </div>
   );

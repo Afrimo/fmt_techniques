@@ -11,6 +11,7 @@ export function TakedownsDefence({ toggleTkDefence }) {
         <SearchIcon className="search" />
         <input className="search-bar" placeholder="Søk teknikk" />
       </div>
+      <div className="modal-body"></div>
     </div>
   );
 }
