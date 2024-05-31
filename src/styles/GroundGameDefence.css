@@ -1,0 +1,7 @@
+.gg-def-box {
+  width: 100vw;
+  height: 105vh;
+  z-index: 25;
+  position: fixed;
+  background-color: blueviolet;
+}
