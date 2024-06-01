@@ -7,13 +7,13 @@ export function TakedownsOffence({ toggleTkOffence }) {
   const offensiveTkData = [
     {
       title: "Double leg",
-      img: "images/wrestling_offence.jpeg",
+      img: "images/doubleleg.jpeg",
       time: "0:17",
       id: 1,
     },
     {
       title: "Body lock",
-      img: "images/wrestling_defence.png",
+      img: "images/bodylock.jpeg",
       time: "0:29",
       id: 2,
     },
@@ -28,14 +28,14 @@ export function TakedownsOffence({ toggleTkOffence }) {
       </div>
       <div className="modal-body">
         {offensiveTkData.map((videoCard) => (
-          <VideoCard videoObject={videoCard} key={videoCard.id} />
+          <OffesiveTkCard videoObject={videoCard} key={videoCard.id} />
         ))}
       </div>
     </div>
   );
 }
 
-function VideoCard({ videoObject }) {
+function OffesiveTkCard({ videoObject }) {
   return (
     <div className="video-card">
       <PlayCircleIcon className="play-btn" fontSize="large" />
