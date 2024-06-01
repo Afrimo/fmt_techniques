@@ -4,6 +4,20 @@ import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 
 export function TakedownsOffence({ toggleTkOffence }) {
+  const offensiveTkData = [
+    {
+      title: "Double leg",
+      img: "images/wrestling_offence.jpeg",
+      time: "0:17",
+      id: 1,
+    },
+    {
+      title: "Body lock",
+      img: "images/wrestling_defence.png",
+      time: "0:29",
+      id: 2,
+    },
+  ];
   return (
     <div className="tk-off-box">
       <div className="modal-header">
@@ -13,32 +27,25 @@ export function TakedownsOffence({ toggleTkOffence }) {
         <input className="search-bar" placeholder="Søk teknikk" />
       </div>
       <div className="modal-body">
-        <VideoCard
-          title="Double leg"
-          img="images/wrestling_offence.jpeg"
-          time="0:16"
-        />
-        <VideoCard
-          title="Body lock"
-          img="images/wrestling_defence.png"
-          time="0:28"
-        />
+        {offensiveTkData.map((videoCard) => (
+          <VideoCard videoObject={videoCard} key={videoCard.id} />
+        ))}
       </div>
     </div>
   );
 }
 
-function VideoCard({ title = "", img = "", time = "" }) {
+function VideoCard({ videoObject }) {
   return (
     <div className="video-card">
       <PlayCircleIcon className="play-btn" fontSize="large" />
       <div className="video-pic-layer"></div>
-      <img src={img} className="video-pic" alt="videopic" />
+      <img src={videoObject.img} className="video-pic" alt="videopic" />
       <div className="name-container">
-        <p>{title}</p>
+        <p>{videoObject.title}</p>
       </div>
       <div className="time-container">
-        <p>{time}</p>
+        <p>{videoObject.time}</p>
       </div>
     </div>
   );
