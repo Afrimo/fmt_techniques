@@ -146,12 +146,7 @@ export function Menu() {
         />
       </div>
       <div className="row">
-        <Card
-          handler={toggleWallOffence}
-          title="Wall game"
-          text="Offence"
-          img="images/wall_offence.webp"
-        />
+        <Card handler={toggleWallOffence} title="Wall game" text="Offence" c />
         <Card
           handler={toggleWallDefence}
           title="Wall game"
