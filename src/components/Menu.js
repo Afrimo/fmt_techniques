@@ -23,34 +23,42 @@ export function Menu() {
 
   const toggleTkOffence = () => {
     setTkOffence(!tkOffence);
+    window.scrollTo(0, 0);
   };
 
   const toggleTkDefence = () => {
     setTkDefence(!tkDefence);
+    window.scrollTo(0, 0);
   };
 
   const toggleGgOffence = () => {
     setGgoffence(!ggOffence);
+    window.scrollTo(0, 0);
   };
 
   const toggleGgDefence = () => {
     setGgDefence(!ggDefence);
+    window.scrollTo(0, 0);
   };
 
   const toggleStrikingOffence = () => {
     setStrikingOffence(!strikingOffence);
+    window.scrollTo(0, 0);
   };
 
   const toggleStrikingDefence = () => {
     setStrikingDefence(!strikingDefence);
+    window.scrollTo(0, 0);
   };
 
   const toggleWallOffence = () => {
     setwallOffence(!wallOffence);
+    window.scrollTo(0, 0);
   };
 
   const toggleWallDefence = () => {
     setwallDefence(!wallDefence);
+    window.scrollTo(0, 0);
   };
 
   return (

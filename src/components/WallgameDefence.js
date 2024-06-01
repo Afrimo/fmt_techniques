@@ -7,7 +7,7 @@ export function WallgameDefence({ toggleWallDefence }) {
   const defensiveWallData = [
     {
       title: "Side getup",
-      img: "images/wallgetup.jpeg",
+      img: "images/wallgetup.webp",
       time: "0:23",
       id: 1,
     },
@@ -23,7 +23,7 @@ export function WallgameDefence({ toggleWallDefence }) {
     <div className="tk-off-box">
       <div className="modal-header">
         <ArrowCircleLeftIcon onClick={toggleWallDefence} className="back" />
-        <h3>WALL GAME OFFENCE</h3>
+        <h3>WALL GAME DEFENCE</h3>
         <SearchIcon className="search" />
         <input className="search-bar" placeholder="Søk teknikk" />
       </div>
