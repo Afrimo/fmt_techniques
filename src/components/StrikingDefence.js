@@ -2,6 +2,7 @@ import "../styles/StrikingDefence.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
+import { AddVideo } from "./Menu";
 
 export function StrikingDefence({ toggleStrikingDefence }) {
   const defensiveStrikingData = [
@@ -28,6 +29,7 @@ export function StrikingDefence({ toggleStrikingDefence }) {
         <input className="search-bar" placeholder="Søk teknikk" />
       </div>
       <div className="modal-body">
+        <AddVideo />
         {defensiveStrikingData.map((videoCard) => (
           <OffensiveStrikingCard videoObject={videoCard} key={videoCard.id} />
         ))}

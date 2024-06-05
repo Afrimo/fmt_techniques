@@ -2,6 +2,7 @@ import "../styles/TakedownsDefence.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
+import { AddVideo } from "./Menu";
 
 export function TakedownsDefence({ toggleTkDefence }) {
   const defensiveTkData = [
@@ -28,6 +29,7 @@ export function TakedownsDefence({ toggleTkDefence }) {
         <input className="search-bar" placeholder="Søk teknikk" />
       </div>
       <div className="modal-body">
+        <AddVideo />
         {defensiveTkData.map((videoCard) => (
           <DefensiveTkCard videoObject={videoCard} key={videoCard.id} />
         ))}

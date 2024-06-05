@@ -2,6 +2,7 @@ import "../styles/WallgameDefence.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
+import { AddVideo } from "./Menu";
 
 export function WallgameDefence({ toggleWallDefence }) {
   const defensiveWallData = [
@@ -28,6 +29,7 @@ export function WallgameDefence({ toggleWallDefence }) {
         <input className="search-bar" placeholder="Søk teknikk" />
       </div>
       <div className="modal-body">
+        <AddVideo />
         {defensiveWallData.map((videoCard) => (
           <WallgameDefenceCard videoObject={videoCard} key={videoCard.id} />
         ))}

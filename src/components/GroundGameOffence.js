@@ -2,6 +2,7 @@ import "../styles/GroundGameOffence.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
+import { AddVideo } from "./Menu";
 
 export function GroundGameOffence({ toggleGgOffence }) {
   const offensiveGgData = [
@@ -28,6 +29,7 @@ export function GroundGameOffence({ toggleGgOffence }) {
         <input className="search-bar" placeholder="Søk teknikk" />
       </div>
       <div className="modal-body">
+      <AddVideo />
         {offensiveGgData.map((videoCard) => (
           <OfensiveGgCard videoObject={videoCard} key={videoCard.id} />
         ))}

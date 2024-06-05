@@ -2,6 +2,7 @@ import "../styles/StrikingOffence.css";
 import SearchIcon from "@mui/icons-material/Search";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
+import { AddVideo } from "./Menu";
 
 export function StrikingOffence({ toggleStrikingOffence }) {
   const offensiveStrikingData = [
@@ -27,6 +28,7 @@ export function StrikingOffence({ toggleStrikingOffence }) {
         <input className="search-bar" placeholder="Søk teknikk" />
       </div>
       <div className="modal-body">
+        <AddVideo />
         {offensiveStrikingData.map((videoCard) => (
           <OffensiveStrikingCard videoObject={videoCard} key={videoCard.id} />
         ))}
