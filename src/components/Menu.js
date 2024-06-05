@@ -10,6 +10,7 @@ import { StrikingOffence } from "./StrikingOffence";
 import { StrikingDefence } from "./StrikingDefence";
 import { WallgameOffence } from "./WallgameOffence";
 import { WallgameDefence } from "./WallgameDefence";
+import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 
 export function Menu() {
   const [tkOffence, setTkOffence] = useState(false);
@@ -184,6 +185,16 @@ function Card({ title = "", text = "", img = "", handler = "" }) {
       <img src={img} alt="" />
       <p className="category-title">{title}</p>
       <p className="category-text">{text}</p>
+    </div>
+  );
+}
+
+export function AddVideo() {
+  return (
+    <div className="add-container">
+      <p>
+        LEGG TIL <AddAPhotoIcon fontSize="x-small" className="add-icon" />
+      </p>
     </div>
   );
 }
